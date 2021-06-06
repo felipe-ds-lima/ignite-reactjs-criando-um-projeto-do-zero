@@ -1,1 +1,58 @@
-// TODO
+.postList {
+  margin-bottom: 4rem;
+}
+
+.post {
+  display: block;
+  margin-top: 3rem;
+
+  h2 {
+    letter-spacing: -0.5px;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+    font-weight: 700;
+  }
+
+  strong {
+    display: block;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+
+  div {
+    display: flex;
+
+    span {
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      color: var(--info);
+
+      & + span {
+        margin-left: 1.5rem;
+      }
+
+      svg {
+        font-size: 1.25rem;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &:hover {
+    h2 {
+      color: var(--highlight);
+    }
+  }
+}
+
+.loadPostsButton {
+  background: transparent;
+  border: 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--highlight);
+  margin-bottom: 5rem;
+}
